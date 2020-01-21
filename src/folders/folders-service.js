@@ -7,16 +7,18 @@ const FolderService = {
 
 
 
+    findById(knex, id){
+        return knex('folders').where({id}).first('*')
+    },
+
+
+
     insert(knex,folder){
         return knex('folders')
             .insert(folder)
             .returning('*')
             .then(rows => rows[0]);
     }
-
-
-
-
 };
 
 module.exports = FolderService;
