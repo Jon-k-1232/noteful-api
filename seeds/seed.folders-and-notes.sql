@@ -1,8 +1,8 @@
 INSERT INTO folders ("name")
 VALUES
-('Projects'),
-('Notes'),
-('Other Notes');
+('Projects Folder'),
+('Notes Folder'),
+('Other Notes Folder');
 
 
 

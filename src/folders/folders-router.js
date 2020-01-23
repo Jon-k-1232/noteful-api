@@ -48,13 +48,14 @@ foldersRouter
             try{
                 const folder = await FolderService.findById(req.app.get('db'), req.params.folder_id);
                 if(!folder){
-                    return next({status: 404, message: 'Folder doesnt exist'});
+                    return next({status: 404, message: 'No Folder'});
                 }
                 res.folder = folder;
                 next();
             }catch(err){
                 next(err);
             }
+
         })
 
         .get((req, res, next) =>{

@@ -1,5 +1,4 @@
 
-
 const FolderService = {
     list(knex){
         return knex('folders').select('*');

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="notefulServer" uuid="3c011414-0dc7-4fd9-bc31-58035e270dae">
+    <data-source source="LOCAL" name="notefulServer" uuid="d079cebe-22c9-4d9e-bf4f-271e6f0cf445">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
