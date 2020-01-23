@@ -6,7 +6,7 @@ VALUES
 
 
 
-INSERT INTO notes ("name", content, folder_id)
+INSERT INTO note ("name", content, folder_id)
 VALUES
 ('Note One', 'this is note one', 1),
 ('Note Two', 'this is note two', 2),

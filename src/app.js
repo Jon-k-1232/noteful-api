@@ -27,7 +27,7 @@ app.use(cors());
 
 
 app.use('/api/folder', foldersRouter);
-app.use('/api/notes', notesRouter);
+app.use('/api/note', notesRouter);
 app.use(errorHandler);
 
 

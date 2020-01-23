@@ -27,7 +27,7 @@ notesRouter
 
         for(const [key,value] of Object.entries(newNote)) {
             if (value === null) {
-                return next({status: 400, message: `Missing '${key}' in request body`})
+                return next({status: 400, message: `Missing '${key}' in request`})
             }
         }
 
@@ -54,7 +54,7 @@ notesRouter
             if(!note){
                 return next({status: 404, message: 'Note doesnt exist'});
             }
-            res.folder = note;
+            res.note = note;
             next();
         }catch(err){
             next(err);

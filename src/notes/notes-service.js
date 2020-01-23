@@ -1,19 +1,19 @@
 
 const NotesService = {
     list(knex) {
-        return knex('notes').select('*')
+        return knex('note').select('*')
     },
 
 
 
     findById(knex, id){
-        return knex('notes').where({id}).first('*')
+        return knex('note').where({id}).first('*')
     },
 
 
 
     insert(knex, note){
-        return knex('notes')
+        return knex('note')
             .insert(note)
             .returning('*')
             .then(row =>rows[0]);
@@ -22,7 +22,7 @@ const NotesService = {
 
 
     delete(knex, id){
-        return knex('notes').where({id}).delete();
+        return knex('note').where({id}).delete();
     }
 
 };
