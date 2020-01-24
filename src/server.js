@@ -1,14 +1,14 @@
 
 
 const app = require('./app.js');
-const { PORT, DB_URL, NODE_ENV } = require('./config.js');
+const { PORT, DATABASE_URL, NODE_ENV } = require('./config.js');
 const  knex = require('knex');
 
 
 
 const db = knex({
     client: 'pg',
-    connection: DB_URL
+    connection: DATABASE_URL
 });
 
 app.set('db', db);
