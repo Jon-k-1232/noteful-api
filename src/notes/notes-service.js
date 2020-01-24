@@ -16,7 +16,7 @@ const NotesService = {
         return knex('note')
             .insert(note)
             .returning('*')
-            .then(row =>rows[0]);
+            .then(rows =>rows[0]);
     },
 
 
