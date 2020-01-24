@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="notefulServer" uuid="d079cebe-22c9-4d9e-bf4f-271e6f0cf445">
+    <data-source source="LOCAL" name="Heroku DB" uuid="f7202148-92ed-44d5-90ac-80acea5b3b38">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/noteful</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-3-220-86-239.compute-1.amazonaws.com:5432/d8c65fcjh2umb6</jdbc-url>
     </data-source>
   </component>
 </project>

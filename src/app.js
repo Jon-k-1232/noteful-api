@@ -20,7 +20,8 @@ app.use(helmet());
 app.use(express.json());
 app.use(cors());
 
-
+/*
+// validate key
 app.use(function validateBearerToken(req, res, next) {
     const apiToken = process.env.API_TOKEN;
     const authToken = req.get('Authorization');
@@ -30,7 +31,7 @@ app.use(function validateBearerToken(req, res, next) {
     }
     next()
 });
-
+*/
 
 
 
